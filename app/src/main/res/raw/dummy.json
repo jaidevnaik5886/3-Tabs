@@ -1,0 +1,32 @@
+﻿{
+  "results": [
+    {
+      "country_name": "India",
+      "country_capital": "Delhi"
+    },
+    {
+      "country_name": "Afghanistan",
+      "country_capital": "Kabul"
+    },
+    {
+      "country_name": "England",
+      "country_capital": "London"
+    },
+    {
+      "country_name": "Italy",
+      "country_capital": "Rome"
+    },
+    {
+      "country_name": "Bahamas",
+      "country_capital": "Nassau"
+    },
+    {
+      "country_name": "Ecuador",
+      "country_capital": "Quito"
+    },
+    {
+      "country_name": "Zimbabwe",
+      "country_capital": "Harare"
+    }
+  ]
+}
