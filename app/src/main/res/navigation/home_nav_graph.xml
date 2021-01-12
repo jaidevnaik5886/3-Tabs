@@ -13,7 +13,7 @@
     </fragment>
     <fragment
         android:id="@+id/tab2Fragment"
-        android:name="com.example.unifynd_test.ui.homescreen.tabs.Tab2Fragment"
+        android:name="com.example.unifynd_test.ui.homescreen.tabs.tab2.Tab2Fragment"
         android:label="Tab2Fragment" >
         <action
             android:id="@+id/action_tab2Fragment_to_viewFragment"

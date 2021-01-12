@@ -21,5 +21,6 @@
     <color name="back_placeholder">#E5E5E5</color>
     <color name="img_placeholder">#CED2D1</color>
     <color name="divider_color">#F1F9FF</color>
+    <color name="red">#FF1100</color>
 
 </resources>

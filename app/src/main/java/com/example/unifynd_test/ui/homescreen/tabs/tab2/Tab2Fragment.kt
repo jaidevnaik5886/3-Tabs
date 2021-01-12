@@ -1,21 +1,21 @@
-package com.example.unifynd_test.ui.homescreen.tabs.tab1
+package com.example.unifynd_test.ui.homescreen.tabs.tab2
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.unifynd_test.R
 import com.example.unifynd_test.adapters.CountryAdapter
 import com.example.unifynd_test.model.Country
 import com.example.unifynd_test.utils.Utilities
-import kotlinx.android.synthetic.main.fragment_tab1.*
+import kotlinx.android.synthetic.main.fragment_tab2.*
 
-
-class Tab1Fragment : Fragment(R.layout.fragment_tab1), Tab1Contract.View {
+class Tab2Fragment : Fragment(R.layout.fragment_tab2), Tab2Contract.View {
 
     lateinit var countryAdapter: CountryAdapter
-    private val presenter: Tab1Presenter by lazy { Tab1Presenter(this) }
+    private val presenter: Tab2Presenter by lazy { Tab2Presenter(this) }
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -36,7 +36,11 @@ class Tab1Fragment : Fragment(R.layout.fragment_tab1), Tab1Contract.View {
 
     private fun init() {
         countryAdapter = CountryAdapter()
-        rv_countries.apply {
+        rv_grid.apply {
+            adapter = countryAdapter
+            layoutManager = GridLayoutManager(activity, 2)
+        }
+        rv_headers.apply {
             adapter = countryAdapter
             layoutManager =
                 LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
@@ -44,7 +48,9 @@ class Tab1Fragment : Fragment(R.layout.fragment_tab1), Tab1Contract.View {
         presenter.onViewCreated(Utilities.readJSONDataFromFile(requireContext()))
     }
 
+
     override fun loadCountries(countries: MutableList<Country>) {
         countryAdapter.differ.submitList(countries)
     }
+
 }
