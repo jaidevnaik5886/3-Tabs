@@ -8,9 +8,7 @@ class Tab3Presenter(private val view: Tab3Contract.View) : Tab3Contract.Presente
                 1 -> {
                     view.showError()
                 }
-                else -> {
-                        getSecondLargest(convertIntToIntArr(numbers.toLong()))
-                }
+                else -> { getSecondLargest(convertIntToIntArr(numbers.toLong())) }
             }
         } else {
             view.showEnterNumberMsg()
