@@ -6,13 +6,29 @@
     <fragment
         android:id="@+id/tab1Fragment"
         android:name="com.example.unifynd_test.ui.homescreen.tabs.tab1.Tab1Fragment"
-        android:label="Tab1Fragment" />
+        android:label="Tab1Fragment" >
+        <action
+            android:id="@+id/action_tab1Fragment_to_viewFragment"
+            app:destination="@id/viewFragment" />
+    </fragment>
     <fragment
         android:id="@+id/tab2Fragment"
         android:name="com.example.unifynd_test.ui.homescreen.tabs.Tab2Fragment"
-        android:label="Tab2Fragment" />
+        android:label="Tab2Fragment" >
+        <action
+            android:id="@+id/action_tab2Fragment_to_viewFragment"
+            app:destination="@id/viewFragment" />
+    </fragment>
     <fragment
         android:id="@+id/tab3Fragment"
-        android:name="com.example.unifynd_test.ui.homescreen.tabs.Tab3Fragment"
+        android:name="com.example.unifynd_test.ui.homescreen.tabs.tab3.Tab3Fragment"
         android:label="Tab3Fragment" />
+    <fragment
+        android:id="@+id/viewFragment"
+        android:name="com.example.unifynd_test.ui.viewscreen.ViewFragment"
+        android:label="ViewFragment" >
+        <argument
+            android:name="country"
+            app:argType="com.example.unifynd_test.model.Country" />
+    </fragment>
 </navigation>
