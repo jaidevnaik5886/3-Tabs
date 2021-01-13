@@ -5,6 +5,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.unifynd_test.R
+import com.example.unifynd_test.utils.Utilities
 import kotlinx.android.synthetic.main.fragment_tab3.*
 
 class Tab3Fragment : Fragment(R.layout.fragment_tab3), Tab3Contract.View {
@@ -19,6 +20,7 @@ class Tab3Fragment : Fragment(R.layout.fragment_tab3), Tab3Contract.View {
     private fun init() {
         btn_done.setOnClickListener {
             presenter.onDoneClicked(edt_number.text.toString())
+            Utilities.hideKeyboard(requireActivity())
         }
     }
 

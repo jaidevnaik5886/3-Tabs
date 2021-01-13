@@ -1,0 +1,46 @@
+﻿{
+  "results": [
+    {
+      "country_name": "TATA",
+      "country_capital": "Car"
+    },
+    {
+      "country_name": "Tesla",
+      "country_capital": "Car"
+    },
+    {
+      "country_name": "Mercedes-Benz",
+      "country_capital": "Car"
+    },
+    {
+      "country_name": "Audi",
+      "country_capital": "Car"
+    },
+    {
+      "country_name": "BMW",
+      "country_capital": "Car"
+    },
+    {
+      "country_name": "Lexus",
+      "country_capital": "Car"
+    },
+    {
+      "country_name": "Ferrari",
+      "country_capital": "Car"
+    }
+  ,
+    {
+      "country_name": "Jaguar",
+      "country_capital": "Car"
+    },
+    {
+      "country_name": "Porsche",
+      "country_capital": "Car"
+    }
+  ,
+    {
+      "country_name": "Volvo",
+      "country_capital": "Car"
+    }
+  ]
+}

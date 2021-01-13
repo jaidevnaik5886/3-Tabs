@@ -22,5 +22,8 @@
     <color name="img_placeholder">#CED2D1</color>
     <color name="divider_color">#F1F9FF</color>
     <color name="red">#FF1100</color>
-
+    <color name="colorHeader">#8009015f</color>
+    <color name="colorGrid">#80af0069</color>
+    <color name="colorGridTitle">#af0069</color>
+    <color name="colorHeaderTitle">#09015f</color>
 </resources>

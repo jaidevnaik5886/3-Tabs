@@ -7,11 +7,13 @@ import com.example.unifynd_test.model.Country
 interface Tab2Contract{
 
     interface View : BaseView {
-        fun loadCountries(countries: MutableList<Country>)
+        fun loadHeaders(countries: MutableList<Country>)
+        fun loadGridView(addItemsFromJSON: MutableList<Country>)
     }
 
     abstract class Presenter protected constructor(view: BaseView) : BasePresenter(view) {
-        abstract fun onViewCreated(jsonString: String)
+        abstract fun onHeaderViewCreated(jsonString: String)
+        abstract fun onGridViewCreated(readJSONDataFromFile: String)
 
 
     }

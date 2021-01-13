@@ -19,6 +19,6 @@ class ViewFragment : Fragment(R.layout.fragment_view) {
 
     private fun init() {
         val country = args.country
-        txt_label.text = "The capital of ${country.countryName} is ${country.capitalName}"
+        txt_label.text = "Title :  ${country.countryName} , Subtitle :  ${country.capitalName}"
     }
 }

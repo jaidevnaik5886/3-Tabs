@@ -41,7 +41,7 @@ class Tab1Fragment : Fragment(R.layout.fragment_tab1), Tab1Contract.View {
             layoutManager =
                 LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
         }
-        presenter.onViewCreated(Utilities.readJSONDataFromFile(requireContext()))
+        presenter.onViewCreated(Utilities.readJSONDataFromFile(requireContext(), R.raw.dummy))
     }
 
     override fun loadCountries(countries: MutableList<Country>) {

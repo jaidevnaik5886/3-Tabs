@@ -1,0 +1,32 @@
+﻿{
+  "results": [
+    {
+      "country_name": "Deewana",
+      "country_capital": "1992"
+    },
+    {
+      "country_name": "Baazigar",
+      "country_capital": "1993"
+    },
+    {
+      "country_name": "Anjaam",
+      "country_capital": "1994"
+    },
+    {
+      "country_name": "Karan Arjun",
+      "country_capital": "1995"
+    },
+    {
+      "country_name": "Chaahat",
+      "country_capital": "1996"
+    },
+    {
+      "country_name": "Koyla",
+      "country_capital": "1997"
+    },
+    {
+      "country_name": "Duplicate",
+      "country_capital": "1998"
+    }
+  ]
+}
